@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-image: 
+        linear-gradient(rgba(36, 37, 83, 0.7), rgba(43, 29, 17, 0.7)), 
+        url('kepek/umszki-feluff_mg_7914-masolata.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+td {
+    position: relative;
+}
+
+#container {
+    text-align: center;
+    color: #f4ecd8;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+#container h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+#container p {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+
+#container1 {
+    display: none;
+    width: 90vw;
+    max-width: 1200px;
+    min-height: 80vh;
+    height: auto;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 15px solid #3d2511;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.8);
+}
+
+tbody, tr, td {
+    height: 80vh;
+}
+
+td {
+    position: relative;
+    width: 50%;
+    background-color: #ffe9d5; 
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    vertical-align: middle;
+}
+
+td:first-child {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset -15px 0 20px rgba(0,0,0,0.1), inset 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+td:last-child {
+    box-shadow: inset 15px 0 20px rgba(0,0,0,0.1), inset 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.egy, .ketto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+img {
+    max-width: 85%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: sepia(30%) contrast(95%);
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+#gombbal, #gombjobb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #3d2511;
+    color: #f4ecd8;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+#gombbal {
+    left: -25px;
+}
+
+#gombjobb {
+    right: -25px;
+}
+
+#gombbal:hover, #gombjobb:hover {
+    background: #5c3a1a;
+    color: #ffffff;
+}
+
+
+#elsoft, #masodikft {
+    left: 50%;
+    bottom: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #5c4a3c;
+    background: transparent;
+    font-style: italic;
+}
